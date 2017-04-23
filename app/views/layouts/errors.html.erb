@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+    <title>ایران مزدا</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  <style>
+    #error {
+        direction: rtl;
+        background: #499bea;
+        background: -moz-linear-gradient(left, #499bea 0%, #207ce5 100%);
+        background: -webkit-gradient(left top, right top, color-stop(0%, #499bea), color-stop(100%, #207ce5));
+        background: -webkit-linear-gradient(left, #499bea 0%, #207ce5 100%);
+        background: -o-linear-gradient(left, #499bea 0%, #207ce5 100%);
+        background: -ms-linear-gradient(left, #499bea 0%, #207ce5 100%);
+        background: linear-gradient(to right, #499bea 0%, #207ce5 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#499bea', endColorstr='#207ce5', GradientType=1 );
+        font-size: 14px;
+        font-family: BYekan, Sans-Serif;
+    }
+    #errors h1 {
+      padding: 80px 0;
+      margin-top: 130px;
+      color: #fff;
+      font-size: 40px;
+    }
+    .link-404 {
+      padding: 20px 50px;
+      color: #fff;
+      border: solid 2px #fff;
+      font-size: 25px;
+    }
+    .link-404:hover {
+      text-decoration: none;
+      background: #fff;
+      border: border: solid 2px #fff;
+      color: #499bea;
+    }
+
+    
+
+  </style>
+</head>
+<body id="error">
+
+    <div class="container">
+        <%= yield %>
+    </div>
+
+</body>
+</html>

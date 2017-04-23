@@ -1,0 +1,27 @@
+<!-- <p id="notice"><%= notice %></p> -->
+
+<section id="blog-index">
+  <div class="container">
+    <div class="row">
+      <% @blogs.each do |blog| %>
+        <div class="col-md-8 col-md-offset-2 blog-content">
+          <h1><%= link_to blog.title, blog %></h1>
+          <div class="article-meta"><%= blog.created_at.to_parsi.strftime "%d %B %Y" %></div>
+          <%= image_tag blog.picture.url if blog.picture? %>
+          <p><%= markdown(truncate(blog.body, length: 300)) %></p>
+          <%#= link_to 'New Blog', new_blog_path %>
+          <p><%= link_to 'بیشتر بخوانید<i class="fa fa-long-arrow-left"></i>'.html_safe, blog, class:"read-more" %></p>
+          <p><%= link_to 'delete', blog, method: :delete, data: {confirm: "Are you sure?"} %>
+        </div>        
+      <% end %>
+    </div>
+    <div class="row">
+      <div class="col-md-8 custom-paginate">
+        <%= will_paginate @blogs, renderer: BootstrapPagination::Rails %>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+

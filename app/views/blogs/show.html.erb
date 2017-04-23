@@ -1,0 +1,37 @@
+<p id="notice"><%#= notice %></p>
+
+<section id="blog-index">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-10">
+        <!-- <%= link_to 'Edit', edit_blog_path(@blog) %> | -->
+        <%= link_to '<i class="fa fa-long-arrow-right"></i>وبلاگ'.html_safe, blogs_path, class:"back-to-blog" %>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2 blog-content">
+        <h1><%= @blog.title %></h1>
+        <div class="article-meta"><%= @blog.created_at.to_parsi.strftime "%d %B %Y" %></div>
+        <div class="img">
+          <%= image_tag @blog.picture_url if @blog.picture? %>
+        </div>
+        <p>
+          <%= markdown(@blog.body) %>
+        </p>
+        <div dir="ltr" id="share"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<script>
+    $("#share").jsSocials({
+        //showLabel: false,
+        showCount: false,
+        shares: ["email", "twitter", "facebook", "linkedin", "telegram"]
+    });
+</script>
+
+
+
