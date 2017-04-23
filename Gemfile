@@ -44,6 +44,7 @@ gem 'will_paginate-bootstrap', '~> 1.0', '>= 1.0.1'
 gem 'redcarpet', '~> 3.4'
 gem 'carrierwave', '~> 1.0'
 gem 'friendly_id', '~> 5.2', '>= 5.2.1'
+gem 'rails_admin'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

@@ -1,0 +1,5 @@
+en:
+  will_paginate:
+    previous_label: "قبلی"
+    next_label: "بعدی"
+    page_gap: "&hellip;"
