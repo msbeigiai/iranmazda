@@ -37,7 +37,6 @@ gem 'jbuilder', '~> 2.5'
 
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
 gem 'font-awesome-sass'
-gem 'jquery-ui-rails', '~> 6.0', '>= 6.0.1'
 gem 'mail_form'
 gem 'parsi-date', '~> 0.3.1'
 gem 'will_paginate', '~> 3.1', '>= 3.1.5'
