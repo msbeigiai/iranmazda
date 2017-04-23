@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  devise_for :admins
+  devise_for :admins, path: 'admin'
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   resources :blogs, path: 'blog', only: [:show, :index]
     #get 'blog', to: 'blogs#index'
