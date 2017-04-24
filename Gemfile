@@ -47,6 +47,13 @@ gem 'friendly_id', '~> 5.2', '>= 5.2.1'
 gem 'rails_admin'
 gem 'devise'
 
+#Capistrano
+group :development do 
+  gem 'capistrano', '~> 3.8', '>= 3.8.1'
+  gem 'capistrano-rails', '~> 1.2', '>= 1.2.3'
+  gem 'capistrano-rbenv', '~> 2.1', '>= 2.1.1'
+end
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
