@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html dir="rtl">
   <head>
-    <title>ایران مزدا</title>
+    <!-- <title>ایران مزدا</title> -->
+	 <meta charset="utf-8">
+	 <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+	 <title><%= content_for?(:title) ? yield(:title) : "ایران مزدا: مرکز خدمات تخصصی خودروهای مزدا" %></title>
+	 <%= favicon_link_tag 'favicon.ico', :rel => 'shortcut icon' %>
   </head>
 
   <body>
