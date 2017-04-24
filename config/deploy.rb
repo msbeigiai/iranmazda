@@ -10,6 +10,8 @@ set :repo_url, "git@bitbucket.org:mohsen662/iran_mazda.git"
 # Default deploy_to directory is /var/www/my_app_name
 set :deploy_to, '/home/deploy/iran_mazda'
 
+set :passenger_restart_with_touch, true
+
 # Default value for :format is :airbrussh.
 # set :format, :airbrussh
 
