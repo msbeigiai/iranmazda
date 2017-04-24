@@ -11,7 +11,7 @@ Rails.application.routes.draw do
 
   root 'welcome#index'
 
-  get 'about_us', to: 'about', controller: 'welcome'
+  get 'about_us', path: 'about-us', to: 'about', controller: 'welcome'
   get 'our_services', to: 'our_services', controller: 'services'
   #get 'contact_us', to: 'contact_us', controller: 'welcome'
   match '/contacts', to: 'contacts#new', via: 'get'
