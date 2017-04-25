@@ -28,6 +28,10 @@ body {
     font-family: BYekan;
 }
 
+body p {
+	font-size: 16px;
+}
+
 hr {
     width: 40px;
     height: 3px;
@@ -209,7 +213,7 @@ hr {
         color: #a3a3a3;
     }
     ul {
-        font-size: 0.9em;
+        font-size: 16px;
         margin-top: 80px;
         direction: ltr;
         font-family: Arial, sans-serif;
@@ -344,7 +348,7 @@ hr {
         margin-top: 30px;
         line-height: 30px;
     }
-    h5 {
+    h4 {
         margin: 20px 0;
         font-size: 1.3em; //padding-top: 40px;
     }
@@ -352,7 +356,7 @@ hr {
         //position: absolute;
         display: block;
         color: #a3a3a3;
-        line-height: 28px;
+        line-height: 32px;
     }
 }
 
@@ -399,7 +403,7 @@ hr {
     .mission p {
         color: #888888;
         font-size: 16px;
-        line-height: 35px;
+        line-height: 40px;
         margin-top: 20px;
     }
     .mission h4 {
@@ -484,7 +488,16 @@ footer {
 
 //ABOUT US
 #about-us {
-    padding-bottom: 30px;
+	padding-bottom: 30px;
+	#banner {
+		padding: 200px 0;
+	   background-image: linear-gradient(rgba(73, 74, 75, 0.3), rgba(73, 74, 75, 0.8)), image-url('banner-services.jpg');
+	   background-size: cover;
+	   background-position: center;
+		color: #fff;
+		text-align: center;
+	}
+    
     h1 {
         border-bottom: solid 1px #d1d1d1;
         padding: 20px 0;
