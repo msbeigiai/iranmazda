@@ -519,7 +519,7 @@ footer {
 
 //ABOUT US
 #about-us {
-	padding-bottom: 70px;
+	//padding-bottom: 70px;
 	#banner {
 		padding: 200px 0;
 		background-image: linear-gradient(rgba(73, 74, 75, 0.3), rgba(73, 74, 75, 0.8)), image-url('banner-services.jpg');
@@ -545,11 +545,22 @@ footer {
 		margin-top: 20px;
 	}
 	.name {
-		width: 80%;
-		border-top: 1px solid #d1d1d1;
-		padding: 30px 0;
+		color: #fff;
+		padding: 100px 0;
+		background-image: linear-gradient(rgba(73, 74, 75, 0.3), rgba(73, 74, 75, 0.8)), image-url('banner-name.jpg');
+		width: 100%;
+		background-size: cover;
+		background-position: center;
+		h4 {
+			margin-top: 25px;
+			line-height: 20px;
+			margin-right: 20px;
+		}
+		img {
+			border-radius: 125px;
+			border: 3px solid #fff;
+		}
 	}
-
 }
 
 //OUR SERVICES
