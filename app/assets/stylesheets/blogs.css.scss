@@ -30,7 +30,7 @@
       }
     }
 	 &:hover, &:after {
-		 background-color: #f5f5f5;
+		 //background-color: #f5f5f5;
 		 transition: 0.2s;
 		 //box-shadow: -10px 30px 30px #B7B7B7;
 	 }
@@ -44,7 +44,7 @@
 	 a:hover {
 		 text-decoration: none;
 	 }
-	 a:after {
+	 a:focus {
 		 text-decoration: none;
 	 }
   }
@@ -65,12 +65,15 @@
 }
 
 #share {
-  direction: left;
+	border-top: solid 1px #d1d1d1;
+	padding-top: 30px;
   font-family: Arial, Helvetica, sans-serif;
   text-decoration: none;
-  margin-top: 30px;
   &:hover {
     text-decoration: none;
+  }
+  &:focus {
+	  text-decoration: none;
   }
 }
 

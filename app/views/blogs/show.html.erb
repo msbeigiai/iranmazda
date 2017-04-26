@@ -17,20 +17,20 @@
         <p>
           <%= markdown(@blog.body) %>
         </p>
-        <div dir="ltr" id="share"></div>
+		  
+		 	<div id="share" dir="ltr"></div>
+			 
+			 
+		   
       </div>
     </div>
+	 
   </div>
 </section>
 
-
 <script>
-    $("#share").jsSocials({
-        //showLabel: false,
-        showCount: false,
-        shares: ["email", "twitter", "facebook", "linkedin", "telegram"]
-    });
+  $("#share").jsSocials({
+      shares: ["email", "twitter", "facebook", "googleplus", "linkedin"]
+  });
 </script>
-
-
 

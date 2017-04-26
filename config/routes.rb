@@ -14,8 +14,8 @@ Rails.application.routes.draw do
   get 'about_us', path: 'about-us', to: 'about', controller: 'welcome'
   get 'our_services', to: 'our_services', controller: 'services'
   #get 'contact_us', to: 'contact_us', controller: 'welcome'
-  match '/contacts', to: 'contacts#new', via: 'get'
-  resources 'contacts', only: [:new, :create]
+  match '/contacts', path: 'contact-us', to: 'contacts#new', via: 'get'
+  resources 'contacts', path: 'contact-us', only: [:new, :create]
 
   get 'services/oil_and_filters'
   get 'services/engine_diagnostics'
