@@ -10,7 +10,7 @@
           <%= image_tag blog.picture.url if blog.picture? %>
           <p><%= markdown(sanitize(blog.body[0, 400] + '...')) %></p>
           <%#= link_to 'New Blog', new_blog_path %>
-          <p><%= link_to 'بیشتر بخوانید<i class="fa fa-long-arrow-left"></i>'.html_safe, blog, class:"read-more" %></p>
+          <%= link_to 'بیشتر بخوانید', blog, class:"read-more" %>
           <p><%#= link_to 'delete', blog, method: :delete, data: {confirm: "Are you sure?"} %>
         </div>        
       <% end %>

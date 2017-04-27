@@ -139,13 +139,18 @@ hr {
 
 // NAVBAR
 .navbar {
-	padding: 20px 0;
+	padding: 25px 0;
 	margin: 0;
 	display: block;
 	text-align: center;
 	box-sizing: border-box;
 	min-height: 25px;
-	background: #fff;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#4899c4+0,2989d8+50,0080c5+100 */
+	background: #4899c4; /* Old browsers */
+	background: -moz-linear-gradient(left, #4899c4 0%, #2989d8 50%, #0080c5 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left, #4899c4 0%,#2989d8 50%,#0080c5 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right, #4899c4 0%,#2989d8 50%,#0080c5 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4899c4', endColorstr='#0080c5',GradientType=1 ); /* IE6-9 */
 	position: relative;
 	.navbar-fixed-top {
 		position: absolute;
@@ -154,21 +159,41 @@ hr {
 	.navbar-default {
 		margin-bottom: 0;
 	}
-	li a {
-		font-size: 18px;
-		color: #333;
-	}
+	
 	.navbar-brand {
-		color: #0080C5;
-		font-size: 2.3em;
+		color: #fff;
+		font-size: 2.1em;
 		font-weight: bold;
 		letter-spacing: 0.2px;
 		transition: 0.2s;
 		&:hover {
-			color: darken(#0080C5, 10%);
+			color: darken(#fff, 3%);
 			transition: 0.2s;
 		}
 
+	}
+	.navbar-left {
+		li {
+			a {
+				padding-left: 0;
+				padding-right: 0;
+				padding-bottom: 5px;
+				margin-left: 30px;
+				font-size: 18px;
+				color: #fff;
+				border-bottom: 2px solid #fff transparent;
+				transition: border-bottom 0.1s, color 0.1s;
+				&:hover {
+					color: #fff;
+			      border-bottom: 2px solid white;
+			      transition: border-bottom 0.1s, color 0.1s;
+				}
+				&:focus {
+					text-decoration: none;
+					color: #fff;
+				}
+			}
+		}
 	}
 
 }
@@ -565,7 +590,7 @@ footer {
 
 //OUR SERVICES
 #our-services {
-	padding: 20px 0 40px 0;
+	padding: 60px 0;
 	.top-row {
 		margin-bottom: 30px;
 	}
