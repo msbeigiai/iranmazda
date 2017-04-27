@@ -46,6 +46,7 @@ gem 'carrierwave', '~> 1.0'
 gem 'friendly_id', '~> 5.2', '>= 5.2.1'
 gem 'rails_admin'
 gem 'devise'
+gem 'google-analytics-rails', '~> 1.1'
 
 #Capistrano
 group :development do 

@@ -10,6 +10,8 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
 	 <title><%= content_for?(:title) ? yield(:title) : "ایران مزدا: مرکز خدمات تخصصی خودروهای مزدا" %></title>
 	 <%= favicon_link_tag 'favicon.ico', :rel => 'shortcut icon' %>
+	 
+	 <%= analytics_init if GoogleAnalytics.valid_tracker? %>
   </head>
 
   <body>
