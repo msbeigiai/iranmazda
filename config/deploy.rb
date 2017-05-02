@@ -15,7 +15,7 @@ set :passenger_restart_with_touch, true
 # Default value for :format is :airbrussh.
 # set :format, :airbrussh
 
-set :linked_files, %w{config/database.yml config/secrets.yml} 
+set :linked_files, %w{config/database.yml config/secrets.yml cloudinary.yml} 
 set :linked_dirs, %w{log tmp/pids tmp/cache tmp/sockets vendor/bundle public/system}
 
 # You can configure the Airbrussh format using :format_options.

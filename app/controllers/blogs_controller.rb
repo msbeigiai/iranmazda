@@ -41,7 +41,7 @@ class BlogsController < ApplicationController
   # PATCH/PUT /blogs/1.json
   def update
     respond_to do |format|
-      if @blog.update(blog_params)
+      if @blog.update_attributes(post_params)
         format.html { redirect_to @blog, notice: 'بلاگ با موفقیت بروز رسانی شد.' }
         format.json { render :show, status: :ok, location: @blog }
       else

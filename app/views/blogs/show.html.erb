@@ -7,7 +7,7 @@
         <h1><%= @blog.title %></h1>
         <div class="article-meta"><%= @blog.created_at.to_parsi.strftime "%d %B %Y" %></div>
         <div class="img">
-          <%= image_tag @blog.picture_url if @blog.picture? %>
+          <%= image_tag @blog.picture_url(:thumb) if @blog.picture? %>
         </div>
         <p>
           <%= markdown(@blog.body) %>
