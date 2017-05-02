@@ -170,6 +170,9 @@ hr {
 			color: darken(#fff, 3%);
 			transition: 0.2s;
 		}
+		&:focus {
+			text-decoration: none;
+		}
 
 	}
 	.navbar-left {
