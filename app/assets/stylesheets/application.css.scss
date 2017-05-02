@@ -145,19 +145,19 @@ hr {
 	text-align: center;
 	box-sizing: border-box;
 	min-height: 25px;
-	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#4899c4+0,2989d8+50,0080c5+100 */
-	background: #4899c4; /* Old browsers */
-	background: -moz-linear-gradient(left, #4899c4 0%, #2989d8 50%, #0080c5 100%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(left, #4899c4 0%,#2989d8 50%,#0080c5 100%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to right, #4899c4 0%,#2989d8 50%,#0080c5 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4899c4', endColorstr='#0080c5',GradientType=1 ); /* IE6-9 */
+	border: none;
+	border-radius: 0;
+	background: #2c3e50;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to left, #2c3e50, #3498db);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to left, #2c3e50, #3498db); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	
 	position: relative;
 	.navbar-fixed-top {
 		position: absolute;
 		z-index: 1000;
 	}
 	.navbar-default {
-		margin-bottom: 0;
+		margin: 0;
 	}
 	
 	.navbar-brand {
@@ -333,8 +333,6 @@ hr {
 		text-decoration: none;
 		color: #fff;
 		transition: 0.3s;
-		border-radius: 3px;
-		box-shadow: 2px 1px 2px #888888;
 		&:hover {
 			background-color: darken(#0080C5, 10%);
 			transition: 0.3s;
@@ -536,6 +534,16 @@ footer {
 		}
 		ul {
 			padding: 0;
+		}
+		a {
+			color: #898989;
+			&:hover {
+				text-decoration: none;
+				color: darken(#898989, 10%);
+			}
+			&:focus {
+				text-decoration: none;
+			}
 		}
 
 	}
