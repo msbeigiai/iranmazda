@@ -48,6 +48,7 @@ gem 'rails_admin'
 gem 'devise'
 gem 'cloudinary'
 gem 'mini_magick'
+gem 'analytics-ruby', '~> 2.0.0', :require => 'segment/analytics'
 
 #Capistrano
 group :development do 
