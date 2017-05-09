@@ -23,6 +23,9 @@ Rails.application.routes.draw do
   get 'services/air_conditioning'
   get 'services/brake_repair'
   get 'services/tire_and_wheel'
+  get 'services/automatic_transmission'
+  get 'services/body_painting'
+  get 'services/suspention'
 
   match "/404", to: "errors#not_found", via: :all
   match "/500", to: "errors#internal_server_error", via: :all
