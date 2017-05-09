@@ -20,4 +20,13 @@ class ServicesController < ApplicationController
   
   def tire_and_wheel
   end
+  
+  def automatic_transmission
+  end
+  
+  def suspention
+  end
+  
+  def  body_panting
+  end
 end
