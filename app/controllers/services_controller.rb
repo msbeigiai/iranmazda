@@ -27,6 +27,6 @@ class ServicesController < ApplicationController
   def suspention
   end
   
-  def  body_panting
+  def  body_painting
   end
 end
