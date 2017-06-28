@@ -1,5 +1,5 @@
 <!-- <p id="notice"><%= notice %></p> -->
-
+<% title 'وبلاگ' %>
 <section id="blog-index">
   <div class="container">
     <div class="row">
@@ -7,7 +7,7 @@
         <div class="col-md-8 col-md-offset-2 blog-content">
           <h1><%= link_to blog.title, blog %></h1>
           <div class="article-meta"><%= blog.created_at.to_parsi.strftime "%d %B %Y" %></div>
-          <%= image_tag blog.picture.url if blog.picture? %>
+          <%= image_tag blog.picture.url, size: "800x400" if blog.picture? %>
           <p><%= markdown(sanitize(blog.body[0, 400] + '...')) %></p>
           <%#= link_to 'New Blog', new_blog_path %>
           <%= link_to 'بیشتر بخوانید', blog, class:"read-more" %>
