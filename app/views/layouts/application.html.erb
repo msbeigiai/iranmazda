@@ -8,7 +8,18 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-	 <title><%= content_for?(:title) ? yield(:title) : "ایران مزدا: مرکز خدمات تخصصی خودروهای مزدا" %></title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+	 <title>
+		 <%#= content_for?(:title) ? yield(:title) : "ایران مزدا: مرکز خدمات تخصصی خودروهای مزدا" %>
+		 
+			<% if content_for?(:title) %>
+				<%=  yield(:title) + ' | ایران مزدا: مرکز خدمات تخصصی خودروهای مزدا' %>
+			<% else %>
+				<%= content_for?(:title) ? yield(:title) : "ایران مزدا: مرکز خدمات تخصصی خودروهای مزدا" %>
+			<% end %>
+	 </title>
 	 <%= favicon_link_tag 'favicon.ico', :rel => 'shortcut icon' %>
   </head>
 
