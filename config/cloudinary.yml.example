@@ -1,9 +1,0 @@
-development:
-  cloud_name: "mohsen662"
-  api_key: "728266126289789"
-  api_secret: "x1p9OuYS0rI0m672LazsVegpEXY"
-
-production:
-  cloud_name: "mohsen662"
-  api_key: "728266126289789"
-  api_secret: "x1p9OuYS0rI0m672LazsVegpEXY"
