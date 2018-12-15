@@ -260,6 +260,7 @@ DEPENDENCIES
   bootstrap-sass (~> 3.3, >= 3.3.7)
   byebug
   capistrano (~> 3.8, >= 3.8.1)
+  capistrano-bundler
   capistrano-passenger (~> 0.2.0)
   capistrano-rails (~> 1.2, >= 1.2.3)
   capistrano-rbenv (~> 2.1, >= 2.1.1)
@@ -291,4 +292,4 @@ DEPENDENCIES
   will_paginate-bootstrap (~> 1.0, >= 1.0.1)
 
 BUNDLED WITH
-   1.14.6
+   1.17.2
